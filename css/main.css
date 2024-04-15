@@ -1,0 +1,740 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Yeseva One", "Playfair Display", sans-serif;
+  color: #000;
+  font-size: 14px;
+}
+
+html {
+  scroll-behavior: smooth; /*Плавный переход scrolling*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+ul,
+il {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.containerF {
+  display: block;
+  width: 100%;
+  margin: 0 auto; /*позицианирование по центру*/
+}
+
+.header {
+  background: url("../img/header-bg2k.jpg") no-repeat center top / cover;
+  padding-top: 57px;
+  padding-left: 57px;
+  padding-right: 57px;
+  color: #ffffff;
+  padding-bottom: 400px;
+  align-items: center;
+}
+
+header a {
+  color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  background: #0000000f;
+}
+
+.menu ol a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.2em; /*расстояние между буквами */
+  margin-right: 70px;
+}
+.menu ol {
+  margin-right: 40px;
+}
+
+.AttractionsIDs {
+  position: relative;
+  display: inline-block;
+}
+
+.AttractionsIDs-content {
+  display: none;
+  position: absolute;
+  background-color: #00000091;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.AttractionsIDs-content a {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+}
+
+.AttractionsIDs-content a:hover {
+  background-color: #000000;
+}
+
+.AttractionsIDs:hover .AttractionsIDs-content {
+  display: block;
+}
+
+.CulturesIDs {
+  position: relative;
+  display: inline-block;
+}
+
+.CulturesIDs-content {
+  display: none;
+  position: absolute;
+  background-color: #00000091;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.CulturesIDs-content a {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+}
+
+.CulturesIDs-content a:hover {
+  background-color: #000000;
+}
+
+.CulturesIDs:hover .CulturesIDs-content {
+  display: block;
+}
+
+a:hover img {
+  transform: scale(1.2);
+} /*Иконка Вернуться на главный */
+
+.AttID1 {
+  float: right;
+  margin-top: 480px;
+}
+.AttID2 {
+  float: left;
+  margin-top: 500px;
+}
+.AttID3 {
+  float: right;
+  margin-top: 500px;
+}
+.AttID4 {
+  float: left;
+  margin-top: 500px;
+}
+.CulID1 {
+  float: right;
+}
+.CulMusID2 {
+  float: left;
+  margin-top: 520px;
+}
+.CulLitID3 {
+  float: right;
+  margin-top: 240px;
+}
+.CulMuseumID4 {
+  float: right;
+  margin-top: 350px;
+}
+.CulXachID5 {
+  float: right;
+  margin-top: 350px;
+}
+
+.logo {
+  margin-right: auto;
+  width: 48px;
+  height: 60px;
+  top: 57px;
+  left: 216px;
+  gap: 0px;
+  opacity: 0px;
+}
+.tel {
+  font-size: 17px;
+  text-decoration: none;
+  margin-left: auto;
+  letter-spacing: 0.1em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.Armenia {
+  margin-top: 310px;
+  text-transform: uppercase;
+}
+.Armenia p {
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.Armenia h1 {
+  font-size: 100px;
+  margin-bottom: 19px;
+  margin-top: -9px;
+  letter-spacing: 0.02em;
+}
+.button {
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 17px 47px;
+  border: 1px solid #fff;
+  width: 238px;
+  text-decoration: none;
+}
+.Dos {
+  display: block;
+  text-align: center;
+}
+.about {
+  padding-top: 80px;
+  background: #0d1522;
+  font-family: "Yeseva One";
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.About-Armenia {
+  text-align: center;
+  font-size: 80px;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+.description1 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 92px;
+}
+.description1 h3 {
+  font-family: "Yeseva One";
+  font-weight: 400 px;
+  text-align: justify;
+  text-align: center;
+  color: #ffffff;
+}
+
+.First {
+  color: #ffffff;
+  text-align: center;
+}
+
+.Second {
+  color: #ffffff;
+  text-align: center;
+}
+
+.description2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 116px;
+}
+.description2 h3 {
+  font-family: "Yeseva One";
+  font-weight: 400 px;
+  text-align: justify;
+  text-align: center;
+  color: #ffffff;
+}
+.Third {
+  color: #ffffff;
+  text-align: center;
+}
+.Fourth {
+  color: #ffffff;
+  text-align: center;
+}
+
+.description3 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 116px;
+}
+.description3 h3 {
+  font-family: "Yeseva One";
+  font-weight: 400 px;
+  text-align: justify;
+  text-align: center;
+  color: #ffffff;
+}
+.Fifth {
+  color: #ffffff;
+  text-align: center;
+}
+.Sixth {
+  color: #ffffff;
+  text-align: center;
+}
+
+.description4 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 116px;
+}
+.description4 h3 {
+  font-family: "Yeseva One";
+  font-weight: 400 px;
+  text-align: justify;
+  text-align: center;
+  color: #ffffff;
+}
+.Seventh {
+  color: #ffffff;
+  text-align: center;
+}
+.Eighth {
+  color: #ffffff;
+  text-align: center;
+}
+
+.Attractions {
+  padding-top: 15px;
+  background: url("../img/Gegard2\ 1.png") no-repeat center top / cover;
+  font-family: "Yeseva One";
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 600px;
+}
+.Third-Menu {
+  display: flex;
+}
+.numberCircle {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  padding: 15px;
+
+  background: #fff;
+  border: 2px solid #ffffff;
+  color: #000;
+  text-align: center;
+
+  font: 50px Yeseva One, sans-serif;
+  font-weight: 400;
+}
+
+.Attractions-right {
+  color: #ffffff;
+  font-size: 25px;
+  margin-left: auto;
+  padding-top: auto;
+  letter-spacing: 0.1em;
+}
+
+.Gegard {
+  margin-top: 60px;
+  font-size: 40 px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.descriptionGegard {
+  display: block;
+  letter-spacing: 0.1em;
+  padding: 5px 5px;
+  border: 2px solid #fff;
+  width: 400px;
+}
+
+.descriptionGegard p {
+  color: #ffffff;
+  font-size: 16 px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+}
+
+.Attractions-2 {
+  padding-top: 25px;
+  background: url("../img/Echmiatin\ 1.png") no-repeat center top / cover;
+  font-family: "Yeseva One";
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 600px;
+}
+.Fourth-Menu {
+  display: flex;
+}
+.numberCircle2 {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  padding: 15px;
+  margin-left: auto;
+
+  background: #fff;
+  border: 2px solid #ffffff;
+  color: #000;
+  text-align: center;
+
+  font: 50px Yeseva One, sans-serif;
+  font-weight: 400;
+}
+
+.Echmiatin {
+  margin-top: 60px;
+  font-size: 40 px;
+  color: #ffffff;
+  font-weight: 400;
+  float: right;
+}
+
+.descriptionEchmiatin {
+  display: block;
+  letter-spacing: 0.1em;
+  padding: 5px 5px;
+  border: 2px solid #fff;
+  width: 400px;
+  margin-left: auto;
+  margin-top: 85px;
+}
+
+.descriptionEchmiatin p {
+  color: #ffffff;
+  font-size: 16 px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+}
+
+.Attractions-3 {
+  padding-top: 30px;
+  background: url("../img/Amberd\ 1.png") no-repeat center top / cover;
+  font-family: "Yeseva One";
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 600px;
+}
+.Third-Menu {
+  display: flex;
+}
+.numberCircle3 {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  padding: 15px;
+
+  background: #000000;
+  border: 2px solid #000000;
+  color: #ffffff;
+  text-align: center;
+
+  font: 50px Yeseva One, sans-serif;
+  font-weight: 400;
+}
+
+.Amberd {
+  margin-top: 60px;
+  font-size: 40 px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.descriptionAmberd {
+  display: block;
+  letter-spacing: 0.1em;
+  padding: 5px 5px;
+  border: 2px solid #000000;
+  width: 400px;
+}
+
+.descriptionAmberd p {
+  color: #000000;
+  font-size: 16 px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+}
+
+.Attractions-4 {
+  padding-top: 25px;
+  background: url("../img/Garni\ 1\ 1.png") no-repeat center top / cover;
+  font-family: "Yeseva One";
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 600px;
+}
+.Sixth-Menu {
+  display: flex;
+}
+.numberCircle4 {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  padding: 15px;
+  margin-left: auto;
+
+  background: #000000;
+  border: 2px solid #000000;
+  color: #ffffff;
+  text-align: center;
+
+  font: 50px "Yeseva One", sans-serif;
+  font-weight: 400;
+}
+
+.Garni {
+  margin-top: 60px;
+  font-size: 40 px;
+  color: #000000;
+  font-weight: 400;
+  float: right;
+}
+
+.descriptionGarni {
+  display: block;
+  letter-spacing: 0.1em;
+  padding: 5px 5px;
+  border: 2px solid #000000;
+  width: 400px;
+  margin-left: auto;
+  margin-top: 85px;
+}
+
+.descriptionGarni p {
+  color: #000000;
+  font-size: 16 px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+}
+
+.Cultures {
+  padding-top: 85px;
+  background: #0d1522;
+  font-family: "Playfair Display";
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 200px;
+}
+
+.History-of-Cultures {
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 85px;
+}
+
+.Ancient-Culture-Desc {
+  width: 800px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 85px;
+}
+
+.Key-change-Desc {
+  width: 800px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 85px;
+}
+
+.Nowadays-Desc {
+  width: 800px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.CulturesMus {
+  padding-top: 70px;
+  background: url("../img/CulMus.jpg") no-repeat center top / cover;
+  font-family: "Playfair Display";
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 600px;
+}
+.GeneralCulMus {
+  float: right;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 40 px;
+
+  background: #6c6c6c3f;
+  border: 2px solid #6c6c6c3f;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.descriptionMusic {
+  display: block;
+  letter-spacing: 0.1em;
+  padding: 5px 5px;
+  border: 2px solid #ffffff;
+  width: 600px;
+  margin-left: auto;
+  margin-top: 100px;
+}
+
+.descriptionMusic p {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.CulturesLit {
+  padding-top: 90px;
+  background: url("../img/Literature.png") no-repeat center top / cover;
+  font-family: "Playfair Display";
+  padding-left: 60px;
+  padding-right: 100px;
+  padding-bottom: 400px;
+}
+.Literature {
+  margin-right: 50px;
+}
+.GeneralCulLit {
+  float: right;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 40 px;
+
+  color: #000000;
+  letter-spacing: 0.05em;
+}
+
+.descriptionLit {
+  display: block;
+  letter-spacing: 0.1em;
+  padding: 5px 5px;
+  width: 600px;
+  margin-left: auto;
+  margin-top: 100px;
+}
+
+.descriptionLit p {
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.CulturesMuseum {
+  padding-top: 90px;
+  background: url("../img/Museum.png") no-repeat center top / cover;
+  font-family: "Playfair Display";
+  padding-left: 92px;
+  padding-right: 60px;
+  padding-bottom: 460px;
+}
+.Museum {
+  margin-left: 55px;
+}
+.GeneralCulMuseum {
+  float: left;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 40 px;
+
+  color: #000000;
+  letter-spacing: 0.05em;
+}
+.descriptionMuseum {
+  display: block;
+  letter-spacing: 0.1em;
+  padding: 5px 5px;
+  width: 400px;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.descriptionMuseum p {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.CulturesXachqar {
+  padding-top: 90px;
+  background: url("../img/Xachqar\ 1.png") no-repeat center top / cover;
+  font-family: "Playfair Display";
+  padding-left: 90px;
+  padding-right: 60px;
+  padding-bottom: 460px;
+}
+
+.GeneralCulXach {
+  float: right;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 40 px;
+
+  background: #6c6c6c3f;
+  border: 2px solid #6c6c6c3f;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.descriptionXach {
+  display: block;
+  letter-spacing: 0.1em;
+  padding: 5px 5px;
+  width: 400px;
+  margin-left: auto;
+  margin-top: 100px;
+}
+
+.descriptionXach p {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.footer-text {
+  font-size: 15px;
+  background-color: #000;
+  font-family: "Playfair Display", sans-serif;
+  display: flex;
+  padding: 50px 0;
+}
+
+.footer-text p {
+  margin-right: 60px;
+  color: #ffffff;
+}
